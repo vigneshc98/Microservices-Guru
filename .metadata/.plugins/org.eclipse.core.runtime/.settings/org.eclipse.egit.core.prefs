@@ -1,0 +1,4 @@
+GitRepositoriesView.GitDirectories=D\:\\Java_Learning\\Microservices_Guru\\sfg-restdocs-example\\.git;D\:\\Java_Learning\\Microservices_Guru\\mssc-beer-order-service\\.git;D\:\\Java_Learning\\Microservices_Guru\\mssc-beer-service\\.git;D\:\\Java_Learning\\Microservices_Guru\\mssc-beer-inventory-service\\.git;
+GitRepositoriesView.GitDirectories.relative=sfg-restdocs-example\\.git;mssc-beer-order-service\\.git;mssc-beer-service\\.git;mssc-beer-inventory-service\\.git;
+core_autoIgnoreDerivedResources=false
+eclipse.preferences.version=1

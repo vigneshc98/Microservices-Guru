@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+	  <groupId>guru.springframework</groupId>
+	  <artifactId>mssc-brewery-bom</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
+	</parent>
+	
+	<groupId>guru.springframework.msscbeerservice</groupId>
+	<artifactId>mssc-beer-inventory-service-2</artifactId>
+	<version>0.0.2-SNAPSHOT</version>
+	<name>mssc-beer-inventory-service-2</name>
+	<description>Demo project for Spring Boot</description>
+	<properties>
+		<java.version>11</java.version>
+		<mapstruct.version>1.5.1.Final</mapstruct.version>
+		<org.lombok.version>1.18.24</org.lombok.version>
+	</properties>
+	
+	<dependencies>
+	</dependencies>
+
+</project>

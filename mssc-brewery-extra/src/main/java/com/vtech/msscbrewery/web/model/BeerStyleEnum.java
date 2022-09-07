@@ -1,0 +1,5 @@
+package com.vtech.msscbrewery.web.model;
+
+public enum BeerStyleEnum {
+    RC_STRONOG,UB_STRONG,BLACKFORT_STRONG,KF_STRONG,TUBORG_STRONG,BUDWISER_MAGNUM,CORONA_LIGHT,HEINAKEIN_LIGHTS
+}

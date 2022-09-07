@@ -1,0 +1,17 @@
+
+j
+java:S1854E">Remove this useless assignment to local variable "savedOrder".(à¥ÄHı;RMAJORZ
+CODE_SMELL
+K
+java:S21199"Save and re-use this "Random".(í‡’ãûÿÿÿÿHş;RCRITICALZBUG
+b
+java:S11359"2Complete the task associated to this TODO comment.(í‡’ãûÿÿÿÿHÿ;RINFOZ
+CODE_SMELL
+[
+java:S1481E"/Remove this unused "savedOrder" local variable.(à¥ÄH€<RMINORZ
+CODE_SMELL
+E
+java:S2119J"Save and re-use this "Random".(™ÑˆZH‚<RCRITICALZBUG
+c
+java:S1068"7Remove this unused "beerOrderRepository" private field.(×ğÈ§Hƒ<RMAJORZ
+CODE_SMELL

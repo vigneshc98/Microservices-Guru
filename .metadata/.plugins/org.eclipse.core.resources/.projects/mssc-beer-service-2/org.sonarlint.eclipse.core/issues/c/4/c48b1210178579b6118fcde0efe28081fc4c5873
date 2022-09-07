@@ -1,0 +1,12 @@
+
+m
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(“¯ÓHø0RMINORZ
+CODE_SMELL
+‹	java:S116"YRename this field "INVENTORY_PATH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“¯Ó8³Úô§0Hù0RMINORZ
+CODE_SMELL
+Š
+java:S14883"^Immediately return this expression instead of assigning it to the temporary variable "onHand".(Ñ˜±øHõ0RMINORZ
+CODE_SMELL
+T
+java:S1170"!Make this final field static too.(“¯Ó8³Úô§0Hú0RMINORZ
+CODE_SMELL

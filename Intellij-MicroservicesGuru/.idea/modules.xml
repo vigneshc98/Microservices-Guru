@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Intellij-MicroservicesGuru.iml" filepath="$PROJECT_DIR$/.idea/Intellij-MicroservicesGuru.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MicroServicesGuru-JMS/MicroServicesGuru-JMS.iml" filepath="$PROJECT_DIR$/MicroServicesGuru-JMS/MicroServicesGuru-JMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mssc-beer-inventory-service-2/mssc-beer-inventory-service-2.iml" filepath="$PROJECT_DIR$/mssc-beer-inventory-service-2/mssc-beer-inventory-service-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mssc-beer-order-service-2/mssc-beer-order-service-2.iml" filepath="$PROJECT_DIR$/mssc-beer-order-service-2/mssc-beer-order-service-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mssc-beer-service-2/mssc-brewery.iml" filepath="$PROJECT_DIR$/mssc-beer-service-2/mssc-brewery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mssc-brewery-bom/sfg-brewery-bom.iml" filepath="$PROJECT_DIR$/mssc-brewery-bom/sfg-brewery-bom.iml" />
+    </modules>
+  </component>
+</project>

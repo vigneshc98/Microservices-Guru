@@ -1,0 +1,17 @@
+
+t
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(ìø¢è8æõ«Ãß0HÔ;RMINORZ
+CODE_SMELL
+ç	java:S116"[Rename this field "BEER_UPC_PATH_V1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìø¢è8æõ«Ãß0H;RMINORZ
+CODE_SMELL
+T
+java:S1170"!Make this final field static too.(®¥Îæ8æõ«Ãß0HÒ;RMINORZ
+CODE_SMELL
+t
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(®¥Îæ8æõ«Ãß0HÚ;RMINORZ
+CODE_SMELL
+â	java:S116"WRename this field "BEER_PATH_V1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®¥Îæ8æõ«Ãß0HÛ;RMINORZ
+CODE_SMELL
+T
+java:S1170"!Make this final field static too.(ìø¢è8æõ«Ãß0HÙ;RMINORZ
+CODE_SMELL

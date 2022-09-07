@@ -1,0 +1,38 @@
+
+y
+java:S1128"ARemove this unused import 'org.springframework.http.HttpHeaders'.(ãŸñ×úÿÿÿÿ8¼Å¿â—0HÇRMINORZ
+CODE_SMELL
+s	java:S125T"<This block of commented-out lines of code should be removed.(‚‰Þ¾øÿÿÿÿ8¼Å¿â—0HÉRMAJORZ
+CODE_SMELL
+Š
+java:S1128"RRemove this unused import 'org.springframework.web.bind.annotation.DeleteMapping'.(­ìÎªþÿÿÿÿ8¼Å¿â—0HÌRMINORZ
+CODE_SMELL
+‚
+java:S1128"JRemove this unused import 'javax.validation.ConstraintViolationException'.(×ÁËóüÿÿÿÿ8¼Å¿â—0HÎRMINORZ
+CODE_SMELL
+†
+java:S1128"SRemove this unused import 'org.springframework.web.bind.annotation.ResponseStatus'.(¯×ñ8¼Å¿â—0HÐRMINORZ
+CODE_SMELL
+z
+java:S1128"GRemove this unused import 'com.vtech.msscbrewery.services.BeerService'.(¿ÔºË8¼Å¿â—0HÒRMINORZ
+CODE_SMELL
+c
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8¼Å¿â—0HÔRMINORZ
+CODE_SMELL
+‹
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡ž¸Îùÿÿÿÿ8¼Å¿â—0HÖRMINORZ
+CODE_SMELL
+|
+java:S36552"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ÉÄõù8Ø¾¯á—0HØRMAJORZBUG
+n	java:S1257"<This block of commented-out lines of code should be removed.(–ƒáÓ8£ÕØÝ—0HÙRMAJORZ
+CODE_SMELL
+c
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¼Å¿â—0HÞRMINORZ
+CODE_SMELL
+s	java:S125'"<This block of commented-out lines of code should be removed.(Úªÿ‘ûÿÿÿÿ8Ãæ¸â—0HàRMAJORZ
+CODE_SMELL
+n	java:S125,"<This block of commented-out lines of code should be removed.(£˜éã8ïã½Ý—0HáRMAJORZ
+CODE_SMELL
+i
+java:S1135<"2Complete the task associated to this TODO comment.(•ð™Àýÿÿÿÿ8ïã½Ý—0HäRINFOZ
+CODE_SMELL

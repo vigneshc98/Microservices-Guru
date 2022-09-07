@@ -1,0 +1,15 @@
+
+[
+java:S3740 "/Provide the parametrized type for this generic.(•¯¥HÜRMAJORZ
+CODE_SMELL
+[
+java:S37402"/Provide the parametrized type for this generic.(…“æƒHİRMAJORZ
+CODE_SMELL
+[
+java:S3740$"/Provide the parametrized type for this generic.(­ÔŒHŞRMAJORZ
+CODE_SMELL
+[
+java:S3740("/Provide the parametrized type for this generic.(ñºÆôHßRMAJORZ
+CODE_SMELL
+
+java:S3655"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ŸØµüÿÿÿÿ8íÿ‰á—0HàRMAJORZBUG

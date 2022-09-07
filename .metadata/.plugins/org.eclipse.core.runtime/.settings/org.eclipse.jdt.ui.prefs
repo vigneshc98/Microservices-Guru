@@ -1,0 +1,10 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Number"><rhs name\="java.math.BigDecimal"/></lhs><lhs name\="java.math.BigDecimal"><rhs name\="java.math.BigDecimal"/></lhs><lhs name\="java.lang.Enum"><rhs name\="com.vtech.msscbrewery.web.model.BeerStyleEnum"/><rhs name\="com.fasterxml.jackson.annotation.JsonFormat$Shape"/></lhs><lhs name\="java.lang.constant.Constable"><rhs name\="com.vtech.msscbrewery.web.model.BeerStyleEnum"/><rhs name\="com.fasterxml.jackson.annotation.JsonFormat$Shape"/></lhs><lhs name\="com.vtech.msscbrewery.web.model.BeerStyleEnum"><rhs name\="com.vtech.msscbrewery.web.model.BeerStyleEnum"/></lhs></history>
+content_assist_number_of_computers=15
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=1
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=21
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true
