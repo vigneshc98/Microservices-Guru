@@ -3,12 +3,12 @@
   
   <!-- dependency from maven central by guru (circleCI cant find local .m2 directory) -->
   <artifactId>sfg-brewery-bom</artifactId>
-  <version>1.0.3-SNAPSHOT</version>
+  <version>1.0.12-SNAPSHOT</version>
   
 	<parent>
         <groupId>com.github.sfg-beer-works</groupId>
         <artifactId>sfg-beer-works-bom</artifactId>
-        <version>1.0.10</version>
+        <version>1.0.16</version>
     </parent> 
   
 <!--   <groupId>guru.springframework</groupId>

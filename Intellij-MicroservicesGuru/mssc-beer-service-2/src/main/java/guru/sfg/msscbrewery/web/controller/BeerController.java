@@ -1,26 +1,17 @@
 package guru.sfg.msscbrewery.web.controller;
 
-import java.util.UUID;
-
+import guru.sfg.brewery.model.BeerDto;
+import guru.sfg.brewery.model.BeerPagedList;
+import guru.sfg.brewery.model.BeerStyleEnum;
+import guru.sfg.msscbrewery.services.BeerService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import guru.sfg.msscbrewery.services.BeerService;
-import guru.sfg.msscbrewery.web.model.BeerDto;
-import guru.sfg.msscbrewery.web.model.BeerPagedList;
-import guru.sfg.msscbrewery.web.model.BeerStyleEnum;
-
-import lombok.RequiredArgsConstructor;
+import java.util.UUID;
 
 @RequiredArgsConstructor
 @RequestMapping("/api/v1")
@@ -60,7 +51,7 @@ public class BeerController {
 
 	@GetMapping("beer/{beerId}")
 	public ResponseEntity<BeerDto> getBeerById(@PathVariable("beerId") UUID beerId,
-			@RequestParam(value = "showInventoryOnHand", required = false) Boolean showInventoryOnHand) {
+											   @RequestParam(value = "showInventoryOnHand", required = false) Boolean showInventoryOnHand) {
 		if (showInventoryOnHand == null) {
 			showInventoryOnHand = false;
 		}

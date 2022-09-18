@@ -1,12 +1,12 @@
 package guru.sfg.msscbrewery.services;
 
-import java.util.UUID;
-
+import guru.sfg.brewery.model.BeerDto;
+import guru.sfg.brewery.model.BeerPagedList;
+import guru.sfg.brewery.model.BeerStyleEnum;
 import org.springframework.data.domain.PageRequest;
 
-import guru.sfg.msscbrewery.web.model.BeerDto;
-import guru.sfg.msscbrewery.web.model.BeerPagedList;
-import guru.sfg.msscbrewery.web.model.BeerStyleEnum;
+import java.util.UUID;
+
 
 public interface BeerService {
     BeerPagedList listBeers(String beerName, BeerStyleEnum beerStyle, PageRequest pageRequest, Boolean showInventoryOnHand);

@@ -1,23 +1,21 @@
 package guru.sfg.msscbrewery.services;
 
-import java.util.UUID;
-import java.util.stream.Collectors;
-
+import guru.sfg.brewery.model.BeerDto;
+import guru.sfg.brewery.model.BeerPagedList;
+import guru.sfg.brewery.model.BeerStyleEnum;
+import guru.sfg.msscbrewery.domain.Beer;
+import guru.sfg.msscbrewery.exceptionhandler.NotFoundException;
+import guru.sfg.msscbrewery.repositories.BeerRepository;
 import guru.sfg.msscbrewery.web.mappers.BeerMapper;
+import lombok.RequiredArgsConstructor;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-import guru.sfg.msscbrewery.domain.Beer;
-import guru.sfg.msscbrewery.exceptionhandler.NotFoundException;
-import guru.sfg.msscbrewery.repositories.BeerRepository;
-import guru.sfg.msscbrewery.web.model.BeerDto;
-import guru.sfg.msscbrewery.web.model.BeerPagedList;
-import guru.sfg.msscbrewery.web.model.BeerStyleEnum;
-
-import lombok.RequiredArgsConstructor;
+import java.util.UUID;
+import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Service
@@ -28,7 +26,7 @@ public class BeerServiceImpl implements BeerService {
 	@Cacheable(cacheNames = "beerListCache", condition = "#showInventoryOnHand == false ") // spring will automatically generate a key here (caching)
 	@Override
 	public BeerPagedList listBeers(String beerName, BeerStyleEnum beerStyle, PageRequest pageRequest,
-			Boolean showInventoryOnHand) {
+								   Boolean showInventoryOnHand) {
 
 		BeerPagedList beerPagedList;
 		Page<Beer> beerPage;

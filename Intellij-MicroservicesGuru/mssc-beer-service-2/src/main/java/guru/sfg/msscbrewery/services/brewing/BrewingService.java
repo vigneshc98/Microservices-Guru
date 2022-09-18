@@ -1,6 +1,6 @@
 package guru.sfg.msscbrewery.services.brewing;
 
-import guru.sfg.common.events.BrewBeerEvent;
+import guru.sfg.brewery.model.events.BrewBeerEvent;
 import guru.sfg.msscbrewery.config.JmsConfig;
 import guru.sfg.msscbrewery.domain.Beer;
 import guru.sfg.msscbrewery.repositories.BeerRepository;

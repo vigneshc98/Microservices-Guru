@@ -1,8 +1,8 @@
 package guru.sfg.msscbrewery.bootstrap;
 
+import guru.sfg.brewery.model.BeerStyleEnum;
 import guru.sfg.msscbrewery.domain.Beer;
 import guru.sfg.msscbrewery.repositories.BeerRepository;
-import guru.sfg.msscbrewery.web.model.BeerStyleEnum;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
