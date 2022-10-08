@@ -14,6 +14,7 @@ public class JmsConfig {
     //beer-order
     public static final String ALLOCATE_ORDER_QUEUE = "allocate-order";
     public static final String ALLOCATE_ORDER_RESPONSE_QUEUE = "allocate-order-response";
+    public static final String DEALLOCATE_ORDER_QUEUE = "deallocate-order";
 
     //Convert Message to Object (or vice-versa)
     @Bean
