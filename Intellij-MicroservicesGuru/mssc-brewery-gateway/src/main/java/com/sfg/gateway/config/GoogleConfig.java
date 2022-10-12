@@ -12,10 +12,12 @@ public class GoogleConfig {
 
     @Bean
     public RouteLocator googleRouteConfig(RouteLocatorBuilder builder){
+        System.out.println("Helloworld");
         return builder.routes()
         .route(r-> r.path("/googlesearch2")
                 .filters(f-> f.rewritePath("/googlesearch2(?<segment>/?.*)","/${segment}")) //if anything after googlesearch2 it will be sent in /"content"
                 .uri("https://google.com"))
                 .build();
     }
+
 }
