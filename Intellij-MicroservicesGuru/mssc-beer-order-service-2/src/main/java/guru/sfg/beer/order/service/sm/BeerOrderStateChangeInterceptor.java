@@ -31,11 +31,12 @@ public class BeerOrderStateChangeInterceptor extends StateMachineInterceptorAdap
         log.debug("Pre-State Change");
 
         Optional.ofNullable(message)
-                .flatMap(msg -> Optional.ofNullable((String) msg.getHeaders().getOrDefault(BeerOrderManagerImpl.ORDER_ID_HEADER, " ")))
+                .flatMap(msg -> Optional.ofNullable( msg.getHeaders().getOrDefault(BeerOrderManagerImpl.ORDER_ID_HEADER, " ")))
                 .ifPresent(orderId -> {
+                    String orderIdStr = orderId.toString();
                     log.debug("Saving state for order id: " + orderId + " Status: " + state.getId());
 
-                    BeerOrder beerOrder = beerOrderRepository.getOne(UUID.fromString(orderId));
+                    BeerOrder beerOrder = beerOrderRepository.getOne(UUID.fromString(orderIdStr));
                     beerOrder.setOrderStatus(state.getId());
                     beerOrderRepository.saveAndFlush(beerOrder);
                 });

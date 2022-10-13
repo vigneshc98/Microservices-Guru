@@ -48,7 +48,7 @@
       <module name="mssc-beer-order-service-2" options="-parameters -Amapstruct.defaultComponentModel=spring" />
       <module name="mssc-brewery" options="-parameters -Amapstruct.defaultComponentModel=spring" />
       <module name="mssc-brewery-gateway" options="-parameters" />
-      <module name="sfg-brewery-bom" options="" />
+      <module name="sfg-brewery-bom" options="-parameters -Amapstruct.defaultComponentModel=spring" />
     </option>
   </component>
 </project>
