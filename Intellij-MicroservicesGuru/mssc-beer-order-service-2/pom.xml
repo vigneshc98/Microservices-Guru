@@ -33,6 +33,11 @@
 			<artifactId>awaitility</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- eureka client-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
 	</dependencies>
 
 	<repositories>

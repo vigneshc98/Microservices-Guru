@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mssc-brewery-gateway" />
+        <module name="mssc-brewery-eureka" />
       </profile>
       <profile name="Annotation profile for mssc-beer-inventory-service-2" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -38,6 +39,7 @@
       <module name="mssc-beer-inventory-service-2" target="11" />
       <module name="mssc-beer-order-service-2" target="11" />
       <module name="mssc-brewery" target="11" />
+      <module name="mssc-brewery-eureka" target="11" />
       <module name="mssc-brewery-gateway" target="11" />
       <module name="sfg-brewery-bom" target="11" />
     </bytecodeTargetLevel>
@@ -47,8 +49,9 @@
       <module name="mssc-beer-inventory-service-2" options="-parameters -Amapstruct.defaultComponentModel=spring" />
       <module name="mssc-beer-order-service-2" options="-parameters -Amapstruct.defaultComponentModel=spring" />
       <module name="mssc-brewery" options="-parameters -Amapstruct.defaultComponentModel=spring" />
+      <module name="mssc-brewery-eureka" options="-parameters" />
       <module name="mssc-brewery-gateway" options="-parameters" />
-      <module name="sfg-brewery-bom" options="-parameters -Amapstruct.defaultComponentModel=spring" />
+      <module name="sfg-brewery-bom" options="" />
     </option>
   </component>
 </project>

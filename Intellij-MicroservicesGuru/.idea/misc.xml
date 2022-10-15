@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/mssc-beer-service-2/pom.xml" />
         <option value="$PROJECT_DIR$/mssc-brewery-bom/pom.xml" />
         <option value="$PROJECT_DIR$/mssc-brewery-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/mssc-brewery-eureka/pom.xml" />
       </list>
     </option>
   </component>
