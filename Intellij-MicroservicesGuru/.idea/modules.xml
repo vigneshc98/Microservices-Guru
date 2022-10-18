@@ -4,11 +4,14 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Intellij-MicroservicesGuru.iml" filepath="$PROJECT_DIR$/.idea/Intellij-MicroservicesGuru.iml" />
       <module fileurl="file://$PROJECT_DIR$/MicroServicesGuru-JMS/MicroServicesGuru-JMS.iml" filepath="$PROJECT_DIR$/MicroServicesGuru-JMS/MicroServicesGuru-JMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mssc-inventory-failover/demo.iml" filepath="$PROJECT_DIR$/mssc-inventory-failover/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/mssc-beer-inventory-service-2/mssc-beer-inventory-service-2.iml" filepath="$PROJECT_DIR$/mssc-beer-inventory-service-2/mssc-beer-inventory-service-2.iml" />
       <module fileurl="file://$PROJECT_DIR$/mssc-beer-order-service-2/mssc-beer-order-service-2.iml" filepath="$PROJECT_DIR$/mssc-beer-order-service-2/mssc-beer-order-service-2.iml" />
       <module fileurl="file://$PROJECT_DIR$/mssc-beer-service-2/mssc-brewery.iml" filepath="$PROJECT_DIR$/mssc-beer-service-2/mssc-brewery.iml" />
       <module fileurl="file://$PROJECT_DIR$/mssc-brewery-eureka/mssc-brewery-eureka.iml" filepath="$PROJECT_DIR$/mssc-brewery-eureka/mssc-brewery-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/mssc-brewery-gateway/mssc-brewery-gateway.iml" filepath="$PROJECT_DIR$/mssc-brewery-gateway/mssc-brewery-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mssc-inventory-failover/mssc-inventory-failover.iml" filepath="$PROJECT_DIR$/mssc-inventory-failover/mssc-inventory-failover.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mssc-inventory-failover-2/mssc-inventory-failover-2.iml" filepath="$PROJECT_DIR$/mssc-inventory-failover-2/mssc-inventory-failover-2.iml" />
       <module fileurl="file://$PROJECT_DIR$/mssc-brewery-bom/sfg-brewery-bom.iml" filepath="$PROJECT_DIR$/mssc-brewery-bom/sfg-brewery-bom.iml" />
     </modules>
   </component>
