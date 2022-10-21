@@ -9,8 +9,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mssc-inventory-failover-2" />
         <module name="mssc-brewery-gateway" />
-        <module name="mssc-inventory-failover" />
-        <module name="demo" />
         <module name="mssc-brewery-eureka" />
       </profile>
       <profile name="Annotation profile for mssc-beer-inventory-service-2" enabled="true">
