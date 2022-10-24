@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/mssc-beer-service-2/mssc-brewery.iml" filepath="$PROJECT_DIR$/mssc-beer-service-2/mssc-brewery.iml" />
       <module fileurl="file://$PROJECT_DIR$/mssc-brewery-eureka/mssc-brewery-eureka.iml" filepath="$PROJECT_DIR$/mssc-brewery-eureka/mssc-brewery-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/mssc-brewery-gateway/mssc-brewery-gateway.iml" filepath="$PROJECT_DIR$/mssc-brewery-gateway/mssc-brewery-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mssc-config-server/mssc-config-server.iml" filepath="$PROJECT_DIR$/mssc-config-server/mssc-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/mssc-inventory-failover-2/mssc-inventory-failover-2.iml" filepath="$PROJECT_DIR$/mssc-inventory-failover-2/mssc-inventory-failover-2.iml" />
       <module fileurl="file://$PROJECT_DIR$/mssc-brewery-bom/sfg-brewery-bom.iml" filepath="$PROJECT_DIR$/mssc-brewery-bom/sfg-brewery-bom.iml" />
     </modules>

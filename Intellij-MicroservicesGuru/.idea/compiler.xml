@@ -10,6 +10,7 @@
         <module name="mssc-inventory-failover-2" />
         <module name="mssc-brewery-gateway" />
         <module name="mssc-brewery-eureka" />
+        <module name="mssc-config-server" />
       </profile>
       <profile name="Annotation profile for mssc-beer-inventory-service-2" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -44,6 +45,7 @@
       <module name="mssc-brewery" target="11" />
       <module name="mssc-brewery-eureka" target="11" />
       <module name="mssc-brewery-gateway" target="11" />
+      <module name="mssc-config-server" target="11" />
       <module name="mssc-inventory-failover" target="11" />
       <module name="mssc-inventory-failover-2" target="11" />
       <module name="sfg-brewery-bom" target="11" />
@@ -58,6 +60,7 @@
       <module name="mssc-brewery" options="-parameters -Amapstruct.defaultComponentModel=spring" />
       <module name="mssc-brewery-eureka" options="-parameters" />
       <module name="mssc-brewery-gateway" options="-parameters" />
+      <module name="mssc-config-server" options="-parameters" />
       <module name="mssc-inventory-failover" options="-parameters" />
       <module name="mssc-inventory-failover-2" options="-parameters" />
       <module name="sfg-brewery-bom" options="" />
