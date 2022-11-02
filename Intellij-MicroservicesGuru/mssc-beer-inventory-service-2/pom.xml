@@ -26,6 +26,11 @@
 	</properties>
 	
 	<dependencies>
+		<!-- Spring security -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
 		<!-- ALL BELOW DEPENDENCIES ARE INCLUDED IN PARENT POM -->
 <!--		&lt;!&ndash; eureka client&ndash;&gt;-->
 <!--		<dependency>-->
