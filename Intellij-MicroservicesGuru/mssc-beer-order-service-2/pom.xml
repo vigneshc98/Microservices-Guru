@@ -20,7 +20,12 @@
 	<version>0.0.2-SNAPSHOT</version>
 	<name>mssc-beer-order-service-2</name>
 	<description>Demo project for Spring Boot</description>
-	
+
+	<properties>
+		<docker.image.prefix>vigneshc16</docker.image.prefix>
+		<docker.image.name>${project.artifactId}</docker.image.name>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>com.github.JensPiegsa</groupId>

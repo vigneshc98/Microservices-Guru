@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/mssc-brewery-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/mssc-inventory-failover-2/pom.xml" />
         <option value="$PROJECT_DIR$/mssc-config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/mssc-beer-service-master/mssc-beer-service-master/pom.xml" />
       </list>
     </option>
   </component>

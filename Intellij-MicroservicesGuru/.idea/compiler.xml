@@ -32,6 +32,7 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar" />
         </processorPath>
         <module name="mssc-brewery" />
+        <module name="mssc-beer-service" />
         <module name="mssc-inventory-failover-2" />
         <module name="mssc-beer-inventory-service-2" />
         <module name="mssc-beer-order-service-2" />
@@ -40,8 +41,10 @@
     <bytecodeTargetLevel>
       <module name="demo" target="11" />
       <module name="demo1" target="11" />
+      <module name="eureka-client-testing" target="11" />
       <module name="mssc-beer-inventory-service-2" target="11" />
       <module name="mssc-beer-order-service-2" target="11" />
+      <module name="mssc-beer-service" target="11" />
       <module name="mssc-brewery" target="11" />
       <module name="mssc-brewery-eureka" target="11" />
       <module name="mssc-brewery-gateway" target="11" />
@@ -55,8 +58,10 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
       <module name="demo1" options="-parameters" />
+      <module name="eureka-client-testing" options="-parameters -Amapstruct.defaultComponentModel=spring" />
       <module name="mssc-beer-inventory-service-2" options="-parameters -Amapstruct.defaultComponentModel=spring" />
       <module name="mssc-beer-order-service-2" options="-parameters -Amapstruct.defaultComponentModel=spring" />
+      <module name="mssc-beer-service" options="-parameters -Amapstruct.defaultComponentModel=spring" />
       <module name="mssc-brewery" options="-parameters -Amapstruct.defaultComponentModel=spring" />
       <module name="mssc-brewery-eureka" options="-parameters" />
       <module name="mssc-brewery-gateway" options="-parameters" />

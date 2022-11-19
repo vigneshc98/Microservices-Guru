@@ -12,14 +12,19 @@
 	<parent>	
         <groupId>com.github.sfg-beer-works</groupId>
         <artifactId>sfg-brewery-bom</artifactId>
-        <version>1.0.17</version>
+        <version>1.0.18</version>
 	</parent> 
 	
 	<groupId>com.vtech</groupId>
-	<artifactId>mssc-brewery</artifactId>
+	<artifactId>mssc-beer-service-2</artifactId>
 	<version>0.0.2-SNAPSHOT</version>
 	<name>mssc-beer-service-2</name>
 	<description>Beer Brewery</description>
+
+    <properties>
+        <docker.image.prefix>vigneshc16</docker.image.prefix>
+        <docker.image.name>${project.artifactId}</docker.image.name>
+    </properties>
 	
 	<dependencies>
             <dependency>

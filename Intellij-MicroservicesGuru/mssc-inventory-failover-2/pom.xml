@@ -16,8 +16,11 @@
 	<description>mssc-inventory-failover-2</description>
 
 	<properties>
-		<spring-cloud.version>2021.0.4</spring-cloud.version>
+<!--		<spring-cloud.version>2021.0.4</spring-cloud.version>-->
+		<docker.image.prefix>vigneshc16</docker.image.prefix>
+		<docker.image.name>${project.artifactId}</docker.image.name>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -56,5 +59,14 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>

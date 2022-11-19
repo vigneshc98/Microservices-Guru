@@ -7,7 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MsscInventoryFailoverApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MsscInventoryFailoverApplication.class, args);
+		try {
+			SpringApplication.run(MsscInventoryFailoverApplication.class, args);
+		}catch (Exception e){
+			System.out.println(e);
+		}
 	}
 
 }

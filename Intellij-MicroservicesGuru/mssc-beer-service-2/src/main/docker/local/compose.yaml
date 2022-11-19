@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  jms:
+    image: vromero/activemq-artemis
+    ports:
+      - 8161:8161
+      - 61616:61616
+
+  zipkin:
+    image: openzipkin/zipkin
+    ports:
+      - 9411:9411
+
+  eureka:
+    image: vigneshc16/mssc-brewery-eureka
+    ports:
+      - 8761:8761
+
+  config:
+    image: vigneshc16/mssc-config-server
+    ports:
+      - 8888:8888
+    depends_on:      #so that config server must have eureka running
+      - eureka
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://netflix:eureka@eureka:8761/eureka/
