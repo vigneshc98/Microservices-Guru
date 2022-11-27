@@ -3,24 +3,127 @@ services:
   jms:
     image: vromero/activemq-artemis
     ports:
-      - 8161:8161
-      - 61616:61616
+      - "8161:8161"
+      - "61616:61616"
 
   zipkin:
     image: openzipkin/zipkin
     ports:
-      - 9411:9411
+      - "9411:9411"
 
   eureka:
     image: vigneshc16/mssc-brewery-eureka
     ports:
-      - 8761:8761
+      - "8761:8761"
 
   config:
-    image: vigneshc16/mssc-config-server
+    image: vigneshc16/mssc-config-server:0.0.1-SNAPSHOT
     ports:
-      - 8888:8888
-    depends_on:      #so that config server must have eureka running
+      - "8888:8888"
+    depends_on:
       - eureka
     environment:
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://netflix:eureka@eureka:8761/eureka/
+#      SPRING_CLOUD_CONFIG_SERVER_GIT_USERNAME: vigneshc98
+#      SPRING_CLOUD_CONFIG_SERVER_GIT_PASSWORD: ******
+      EUREKA_INSTANCE_PREFER_IP_ADDRESS: "true"
+#      SPRING_CLOUD_CONFIG_SERVER_GIT_URI: git@github.com:vigneshc98/mssc-config-server-example.git
+#      SPRING_CLOUD_CONFIG_SERVER_GIT_CLONE-ON-START: "false"
+
+  inventory-service:
+    image: vigneshc16/mssc-beer-inventory-service-2
+    ports:
+      - "8082:8082"
+    depends_on:
+      - eureka
+      - config
+      - jms
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://netflix:eureka@eureka:8761/eureka/
+      SPRING_PROFILES_ACTIVE: local-discovery,localmysql
+      SPRING_ZIPKIN_BASEURL: http://zipkin
+      SPRING_ARTEMIS_HOST: jms
+      SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/beerinventoryservice?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+      SPRING_CLOUD_CONFIG_URI: http://config:8888
+      SPRING_CLOUD_DISCOVERY_ENABLED: "true"
+      EUREKA_INSTANCE_PREFER_IP_ADDRESS: "true"
+      #    restart: on-failure
+
+  inventory-failover:
+    image: vigneshc16/mssc-inventory-failover
+    ports:
+      - "8083:8083"
+    depends_on:
+      - eureka
+      - config
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://netflix:eureka@eureka:8761/eureka/
+      EUREKA_INSTANCE_PREFER_IP_ADDRESS: "true"
+
+
+  beer-service:
+    image:  vigneshc16/mssc-beer-service-2
+    ports:
+      - "8080:8080"
+    depends_on:
+      - eureka
+      - config
+      - jms
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://netflix:eureka@eureka:8761/eureka/
+      SPRING_PROFILES_ACTIVE: local-discovery,localmysql
+      SPRING_ZIPKIN_BASEURL: http://zipkin
+      SPRING_ARTEMIS_HOST: jms
+      SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/beerservice?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+      SPRING_CLOUD_CONFIG_RETRY_MAX_ATTEMPTS: 20
+      SPRING_CLOUD_CONFIG_RETRY_MAX_INTERVAL: 2000
+      SPRING_CLOUD_CONFIG_RETRY_INITIALINTERVAL: 3000
+      SPRING_CLOUD_CONFIG_RETRY_MULTIPLIER: 1.3
+      SPRING_CLOUD_CONFIG_URI: http://config:8888
+      SPRING_CLOUD_DISCOVERY_ENABLED: "true"
+      EUREKA_INSTANCE_PREFER_IP_ADDRESS: "true"
+  #    restart: on-failure
+
+  order-service:
+    image: vigneshc16/mssc-beer-order-service-2:0.0.2-SNAPSHOT
+    ports:
+      - "8081:8081"
+    depends_on:
+      - eureka
+      - config
+      - jms
+      - beer-service
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://netflix:eureka@eureka:8761/eureka/
+      SPRING_PROFILES_ACTIVE: local-discovery,localmysql
+      SPRING_ZIPKIN_BASEURL: http://zipkin
+      SPRING_ARTEMIS_HOST: jms
+      SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/beerorderservice?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+      SPRING_CLOUD_CONFIG_URI: http://config:8888
+      SPRING_CLOUD_DISCOVERY_ENABLED: "true"
+      SFG_BREWERY_BEER-SERVICE-HOST: http://beer-service:8080
+      EUREKA_INSTANCE_PREFER_IP_ADDRESS: "true"
+#    restart: on-failure
+
+  gateway:
+    image: vigneshc16/mssc-brewery-gateway:0.0.1-SNAPSHOT
+    ports:
+      - 9090:9090
+    depends_on:
+      - eureka
+      - config
+      - inventory-service
+      - beer-service
+      - order-service
+      - inventory-failover
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://netflix:eureka@eureka:8761/eureka/
+      SPRING_PROFILES_ACTIVE: local-discovery,localmysql
+      SPRING_CLOUD_DISCOVERY_ENABLED: "true"
+      EUREKA_INSTANCE_PREFER_IP_ADDRESS: "true"
+#    restart: on-failure
+
+
+
+
+

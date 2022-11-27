@@ -16,7 +16,7 @@
 	
 	<groupId>guru.springframework.msscbeerservice</groupId>
 	<artifactId>mssc-beer-inventory-service-2</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>mssc-beer-inventory-service-2</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
